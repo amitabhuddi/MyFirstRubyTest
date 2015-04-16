@@ -1,0 +1,13 @@
+
+<p>
+  <strong>Title:</strong>
+</p>
+
+<% @allEmails.each do |email| %>
+	<%= email.subject %> <br>
+	<%= email.message %> <br>
+<% end %>
+
+<p> <strong>
+    <%= link_to 'Mails', emails_path %>
+</strong> </p>
